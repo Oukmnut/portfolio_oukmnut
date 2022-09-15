@@ -1,16 +1,44 @@
-import React from 'react'
+import React, { useState } from "react";
 
-function Navbar() {
+export default function SetTimeOut() {
+  const [time, setTime] = useState('');
+  setInterval(function () {
+    var date = new Date();
+    // setTime(date.toLocaleTimeString())
+    setTime(date.toLocaleTimeString().slice(0, 10))
+    if (date.toLocaleTimeString().slice(0, 10) === "3:12:10") {
+      alert('Check Out')
+
+    }
+
+  }, 1000);
   return (
-    <nav>
-      <ul>
-        <li>About Me</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div className="fx">
+      <div>
+        <nav >
+          <ul className="time">
+            <li >ម៉ោង: {time}</li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+          <nav> 
+              <ul>
+                <a href='#'>
+                  <li>អំពីខ្ញុំ</li>
+                </a>
+                <a href='#'>
+                  <li>ជំនាញ</li>
+                </a>
+                <a href='#'>
+                  <li>គម្រោង</li>
+                </a>
+                <a href='#'>
+                  <li>ទំនាក់ទំនង</li>
+                </a>
+              </ul>
+            </nav>
+      </div>
+    </div>
   )
 }
-
-export default Navbar

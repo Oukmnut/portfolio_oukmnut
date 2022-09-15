@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Noto Serif Khmer', serif;
 }
-
-nav{
+.fx{
+  display: flex;
+  justify-content: space-between;
+}
+.time{
+  text-align: center;
+}
+nav {
   display: flex;
   justify-content: flex-end;
   padding: 0 80px;
@@ -18,8 +27,11 @@ nav ul {
   list-style-type: none;
   gap: 10px;
 }
+nav ul a{
+  text-decoration: none;
+}
 
-nav ul li{
+nav ul li {
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -31,66 +43,69 @@ nav ul li{
   margin: 10px;
 }
 
-h1{
+h1 {
   margin: 0;
   font-size: 2.5rem;
 }
 
-p{
+p {
   font-size: 1.4rem;
   font-weight: medium;
   color: rgb(111, 111, 111);
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.buttons{
+.buttons {
+
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
 }
 
-.cta{
+.cta {
   font-weight: bold;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
-.hire{
+.hire {
   background-color: #fff;
   border: 2px solid black;
 }
 
-.hire:hover{
+.hire:hover {
   background-color: black;
   color: white;
 }
 
-.project{
+.project {
   background-color: black;
   border: 2px solid black;
   color: white;
 }
 
-.project:hover{
+.project:hover {
   background-color: white;
   color: black;
 }
 
-figure{
+figure {
   margin: 0;
   position: relative;
 }
 
-.me-img{
+.me-img {
   border: 5px solid black;
   border-bottom-left-radius: 50%;
+  cursor: grab;
 }
 
-.img-bg{
+.img-bg {
   width: 350px;
   height: 450px;
   /* background-color: black; */
@@ -102,21 +117,22 @@ figure{
 }
 
 @media screen and (min-width:800px) {
-  .content{
+  .content {
     flex-direction: row;
     margin: 80px;
   }
 
-  h1{
+  h1 {
     font-size: 3.5rem;
   }
 
-  .cta{
+  .cta {
+    font-family: 'Noto Serif Khmer', serif;
     padding: 20px 30px;
     font-size: 1.2rem;
   }
 
-  .buttons{
+  .buttons {
     margin: 0;
   }
 }
