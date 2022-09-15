@@ -14,14 +14,14 @@ export default function SetTimeOut() {
   }, 1000);
   return (
     <div className="fx">
-      <div>
+      <div className="xm">
         <nav >
           <ul className="time">
             <li >ម៉ោង: {time}</li>
           </ul>
         </nav>
       </div>
-      <div>
+      <div className="xm">
           <nav> 
               <ul>
                 <a href='#'>

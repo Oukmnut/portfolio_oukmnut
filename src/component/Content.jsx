@@ -13,7 +13,7 @@ function Content() {
           <h1>សួរស្ដី <img src={wave} alt="wave" width={100} /></h1>
           <h1>ខ្ញុំបាទឈ្មោះ អ៊ុក មនុត្ត</h1>
           <h1>Front-end developer</h1>
-          <p>ខ្ញុំជាអ្នកអភិវឌ្ឍន៍រចនា Website ដែលមានបទពិសោធន៍ ដែលធ្វើឲ្យ គេហទំព័រ របស់លោកអ្នកមានភាពទាក់ទាញ នឹង ​Responsive នៅលើទូរសព្ទដៃ។ ខ្ញុំធ្វើការជាមួយ Figma, HTML5, CSS3, JavaScript, React, ReactNative និង Flutter ជាដើម</p>
+          <p>ខ្ញុំជាអ្នកអភិវឌ្ឍន៍រចនា Website ដែលមានបទពិសោធន៍ ដែលធ្វើឲ្យ គេហទំព័រ របស់លោកអ្នកមានភាពទាក់ទាញ នឹង ​Responsive នៅលើទូរសព្ទដៃ។ ខ្ញុំធ្វើការជាមួយ Figma, HTML5, CSS3, JavaScript, React, ReactNative និង Flutter ជាដើម។</p>
         </div>
         <div className='buttons'>
           <a href="#"><button className="cta hire">ជួល​ខ្ញុំ</button></a>
